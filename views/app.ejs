@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>hiraganaHelper</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- PWA Meta Tags -->
+    <link rel="manifest" href="/manifest.json">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#ffa5d5">
+
+    <!-- IOS Meta Tags -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="apple-touch-icon" href="/icons/icon-192.png">
+
+    <!-- Service Worker Registration -->
+    <script>
+    if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('/sw.js')
+        .then(reg => console.log('SW registrado:', reg.scope))
+        .catch(err => console.error('Falha no SW:', err));
+    });
+    }
+    </script>
+</head>
+<body>
+    <div id="page">
+        <div id="title">
+            <h1>hiraganaHelper</h1>
+        </div>
+        
+        <div id="panel">
+            <div id="hiragana"><%= hiragana %></div>
+            <div id="options">
+                <% options.forEach(option => { %>
+                    <button class="option" romaji="<%= option %>"><%= option %></button>
+                <% }); %>
+            </div>
+        </div>
+    </div>
+    <script>
+        const correctAnswer = '<%= correctAnswer %>';
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

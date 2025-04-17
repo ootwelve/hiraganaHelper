@@ -1,0 +1,36 @@
+{
+    "name": "hiraganaHelper",
+    "short_name": "Hiragana",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#ffa5d5",
+    "icons": [
+      {
+        "src": "/icons/icon-192.png",
+        "type": "image/png",
+        "sizes": "192x192"
+      },
+      {
+        "src": "/icons/icon-512.png",
+        "type": "image/png",
+        "sizes": "512x512"
+      }
+    ],
+    "screenshots": [
+        {
+        "src": "/screenshots/desktop.png",
+        "sizes": "1920x1080",
+        "type": "image/png",
+        "form_factor": "wide",
+        "label": "Desktop Screenshot"
+        },
+        {
+        "src": "/screenshots/mobile.png",
+        "sizes": "375x667",
+        "type": "image/png",
+        "form_factor": "narrow",
+        "label": "Mobile Screenshot"
+        }
+    ]
+  }
