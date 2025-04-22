@@ -115,3 +115,5 @@ const PORT = 3000;
 app.listen(PORT, () => {
     console.log(`Estamos em: http://localhost:${PORT}`);
 });
+
+module.exports = app;

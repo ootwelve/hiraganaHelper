@@ -1,0 +1,26 @@
+{
+    "version": 2,
+    "builds": [
+      {
+        "src": "server.js",
+        "use": "@vercel/node"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/sw.js",
+        "headers": {
+          "Cache-Control": "no-cache",
+          "Service-Worker-Allowed": "/"
+        }
+      },
+      {
+        "src": "/public/(.*)",
+        "dest": "/public/$1"
+      },
+      {
+        "src": "/(.*)",
+        "dest": "server.js"
+      }
+    ]
+  }
