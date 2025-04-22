@@ -8,7 +8,7 @@
     ],
     "routes": [
       {
-        "src": "/sw.js",
+        "src": "/public/sw.js",
         "headers": {
           "Cache-Control": "no-cache",
           "Service-Worker-Allowed": "/"
