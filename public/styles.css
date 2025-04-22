@@ -3,7 +3,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
     margin: 0;
     transition: background-color 0.3s;
 }
@@ -19,7 +21,7 @@ body {
 #start-button {
     margin-top: 30px;
     padding: 10px 18px;
-    background-color: #ff5eb4;
+    background-color: #cf2a82;
     text-decoration: none;
     color: white;
     border-radius: 5px;

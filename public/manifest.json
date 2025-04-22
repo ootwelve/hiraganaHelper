@@ -1,10 +1,10 @@
 {
     "name": "hiraganaHelper",
-    "short_name": "Hiragana",
+    "short_name": "hiraganaHelper",
     "start_url": "/",
     "display": "standalone",
     "background_color": "#ffffff",
-    "theme_color": "#ffa5d5",
+    "theme_color": "#8d004b",
     "icons": [
       {
         "src": "/icons/icon-192.png",
